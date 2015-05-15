@@ -63,7 +63,7 @@ window.chrome = function() {
 
 		chrome.initContentLinkHandlers( $( "#main" ) );
 		scrubInlineStyles( $( "#main" ) );
-		mw.mobileFrontend.references.init($("#main")[0], false, {animation: 'none', onClickReference: onClickReference});
+//		mw.mobileFrontend.references.init($("#main")[0], false, {animation: 'none', onClickReference: onClickReference});
 		handleSectionExpansion();
 	}
 
@@ -220,7 +220,7 @@ window.chrome = function() {
 
 			$(".closeButton").bind('click', showContent);
 			// Initialize Reference reveal with empty content
-			mw.mobileFrontend.references.init($("#content")[0], true, {onClickReference: onClickReference} );
+//			mw.mobileFrontend.references.init($("#content")[0], true, {onClickReference: onClickReference} );
 
 			app.setFontSize(preferencesDB.get('fontSize'));
 			app.setTheme( preferencesDB.get( 'theme' ) );
@@ -442,8 +442,8 @@ window.chrome = function() {
 		scrollTo: scrollTo,
 		populateSection: populateSection,
 		initContentLinkHandlers: initContentLinkHandlers,
-		showHeader: null, // initialized inside handleHeaderTimeout
-		hideHeader: null,  // initialized inside handleHeaderTimeout
+		showHeader: function(){}, // initialized inside handleHeaderTimeout
+		hideHeader: function(){},  // initialized inside handleHeaderTimeout
 		loadCSS: loadCSS
 	};
 }();
