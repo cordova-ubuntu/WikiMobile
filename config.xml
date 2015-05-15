@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ubuntu.developer.zaspire.wikipedia" version="4.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Wikipedia</name>
+    <description>
+    </description>
+    <author email="maxim.ermilov@canonical.com" href="http://cordova.io">
+        Maxim Ermilov
+    </author>
+    <icon src="image/icon.png" />
+
+    <preference name="DisallowOverscroll" value="false" />
+    <content src="index.html" />
+    <preference name="Orientation" value="portrait" />
+    <access origin="http://*.apache.com/*" />
+</widget>
