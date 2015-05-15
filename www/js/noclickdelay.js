@@ -1,16 +1,16 @@
 /* MIT Licensed code obtained from http://cubiq.org/remove-onclick-delay-on-webkit-for-iphone */
 function NoClickDelay(el) {
-	this.element = typeof el == 'object' ? el : document.getElementById(el);
-	if( window.Touch ) this.element.addEventListener('touchstart', this, false);
+//	this.element = typeof el == 'object' ? el : document.getElementById(el);
+//	if( window.Touch ) this.element.addEventListener('touchstart', this, false);
 }
 
 NoClickDelay.prototype = {
 	handleEvent: function(e) {
-		switch(e.type) {
+/*		switch(e.type) {
 			case 'touchstart': this.onTouchStart(e); break;
 			case 'touchmove': this.onTouchMove(e); break;
 			case 'touchend': this.onTouchEnd(e); break;
-		}
+		}*/
 	},
 
 	onTouchStart: function(e) {
