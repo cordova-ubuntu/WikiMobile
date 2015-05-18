@@ -100,6 +100,10 @@ function popupMenu(items, callback, options) {
 	});
 }
 
+function shareBrowser() {
+	window.open(pageHistory[pageHistory.length - 1]);
+}
+
 function showPageActions(origin) {
 	popupMenu([
 		mw.msg('menu-savePage'),
